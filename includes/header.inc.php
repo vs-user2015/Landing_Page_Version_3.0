@@ -107,6 +107,7 @@
 							<div id="contact_us_mobile" rel="trigger_mobile_contact">
 								<img src="images/email.png" id="email_logo" rel="trigger_mobile_contact">
 								<p>CONTACT US</p>
+								<div class="clear"></div>
 							</div>
 
 							<h4 id="h4_service">SCHEDULE SERVICE</h4>
