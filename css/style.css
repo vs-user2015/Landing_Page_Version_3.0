@@ -853,12 +853,13 @@ body{
 	text-align: center;
 	font-size: 25px;
 	font-weight: 600;
-	display: inline-block;
+	float: left;
 }
 
 #email_logo{
 	text-align: center;
 	padding: 0 10px 0 0;
+	float: left;
 }
 
 #email_logo:hover{
