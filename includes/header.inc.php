@@ -71,7 +71,7 @@
 					<div class="container">
 						<div class="inner-padding">
 						<!-- Company Info -->
-							<div id="company_info"><img alt="company logo" src="images/logo.png"></div>
+							<div id="company_info"><a href="index.php"><img alt="company logo" src="images/logo.png"></a></div>
 							<div id="number">
 								<div  rel="trigger_mobile_nav">
 									<img src="images/mobile-nav.png" id="mobile_nav" rel="trigger_mobile_nav">
