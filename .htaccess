@@ -1,0 +1,6 @@
+<files ~ "^.*\.([Hh][Tt][Az])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+# Block the includes-only files.

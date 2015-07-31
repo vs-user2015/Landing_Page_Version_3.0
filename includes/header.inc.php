@@ -24,7 +24,7 @@
 						<a href="index.php">About Us</a>
 						<img src="images/sub_menu_button.png" class="sub-menu-mobile">
 						<ul class="sub-menu">
-							<li><a href="">Page 1</a></li>
+							<li><a href="contact-us.php">Page 1</a></li>
 							<li><a href="">Page 2</a></li>
 						</ul>
 					</li>

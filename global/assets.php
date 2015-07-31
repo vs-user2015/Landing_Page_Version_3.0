@@ -102,8 +102,6 @@ class Phone{
 			return ("303-502-9112"); // Enter the number you want if you land on this page
 		}else if(in_array($title,$hvac)){
 			return ("303-578-4053");
-		
-		
 		}else if(in_array($title,$electrical)){
 			return ("303-835-3615");
 		}else{
