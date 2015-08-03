@@ -7,7 +7,7 @@
 				<div class="container">
 					<div class="inner-padding">
 						<div class="contact-us">
-							<p class="title">CALL 254-488-5501</p>
+							<p class="title">CALL <?php echo Phone::number_single($phone_number) ; ?></p>
 							<p class="sub-title">Local and Trusted Roofing Experts</p>
 							<!-- BOTTOM NAV -->	
 							<nav class="bottom-nav">
@@ -20,7 +20,7 @@
 							</nav>
 						</div>
 						<div id="copyright">
-							<p>Copyright &copy; Dr. Watts Electric</p>
+							<p><?php echo $copy ; ?></p>
 							<p>All Rights Reserved</p>
 							<p id="marketing">Marketing by <a title="vitalstorm" href="http://www.vitalstorm.com" target="_blank">Vitalstorm</a></p>
 						</div>

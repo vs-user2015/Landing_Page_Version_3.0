@@ -1,3 +1,5 @@
+<?php require_once "global/assets.php" ; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -76,7 +78,7 @@
 								<div  rel="trigger_mobile_nav">
 									<img src="images/mobile-nav.png" id="mobile_nav" rel="trigger_mobile_nav">
 								</div>
-								<p id="top_number"><span>CALL</span> 254-488-5501</p>
+								<p id="top_number"><span>CALL</span> <?php echo Phone::number_single($phone_number) ;?></p>
 								<p id="sub_title">Local and Trusted Roofing Experts</p>
 							</div>
 							<div class="clear"></div>

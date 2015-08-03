@@ -4,11 +4,11 @@
 /** Global File **/
 /******************/
 
-$company_name = "Plumbline Services";
+$company_name = "Dr. Watts";
 
 $vs_name = "Marketing by <a target='_blank' href='http://vitalstorm.com/'>VitalStorm</a>";
 
-$copy = "Copyright &copy; " . date("Y") . " " . $company_name . " <br>All Rights Reserved";
+$copy = "Copyright &copy; " . date("Y") . " " . $company_name;
 
 $company_logo = "logo";
 
@@ -16,7 +16,7 @@ $company_logo = "logo";
 $title = substr(basename($_SERVER["PHP_SELF"]),0,-4);
 
 /* PHONE NUMBER */
-$phone_number = "801-251-6975"; 
+$phone_number = "111-222-3333"; 
 
 /* 
  * Strip dashes or unwanted characters from the page file.
@@ -97,7 +97,7 @@ class Coupon{
 class Phone{
 
 	/* Use this function if there are multiple phone numbers */
-	public static function number($title,$hvac,$plumbing,$electrical){
+	public static function number($title,$hvac,$plumbing,$electrical,$phone_number){
 		if(in_array($title,$plumbing)){
 			return ("303-502-9112"); // Enter the number you want if you land on this page
 		}else if(in_array($title,$hvac)){
@@ -105,13 +105,13 @@ class Phone{
 		}else if(in_array($title,$electrical)){
 			return ("303-835-3615");
 		}else{
-			return ("303-835-1530"); // Enter the number if it is not "water-heater"
+			self::number_single($phone_number);
 		}
 	}
 	
 	/* Use this function if there is only a single phone number */
-	public static function number_single(){
-		return "830-522-4594";
+	public static function number_single($phone_number){
+		return $phone_number;
 	}
 }
 
