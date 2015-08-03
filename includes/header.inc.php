@@ -6,6 +6,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="<?php echo Meta::keyword($title,$meta_keywords) ; ?>">
+		<meta name="description" content="<?php echo Meta::description($title,$meta_descriptions) ; ?>">
+		<meta name="author" content="VitalStorm.com">
 		<link href="css/style.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>

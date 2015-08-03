@@ -1,9 +1,6 @@
 <?php // LP PHP functions & variables
 
-/******************/
-/** Global File **/
-/******************/
-
+/* Global Variables */
 $company_name = "Dr. Watts";
 
 $vs_name = "Marketing by <a target='_blank' href='http://vitalstorm.com/'>VitalStorm</a>";
@@ -31,24 +28,23 @@ function title($title){
 		
 /* This is for the meta tag keywords */
 $meta_keywords = array(
-	"about-us"	=> ""
+	"about-us"	=> "",
+	"index"	=> ""
 );
 
 /* This is for the meta tag descriptions */
 $meta_descriptions = array(
-	"about-us"	=> ""
+	"about-us"	=> "",
+	"index"	=> ""
 );
 
 /* This is for coupon names */
 $coupon_name = array(
-	"about-us",
+	"about-us"
 );
 
 $specials = array(
-	"plumbing",
-	"water-heater",
-	"drain-clean",
-	"sump-pumps",
+	"plumbing"
 );
 
 /* List of the pages */
@@ -68,10 +64,8 @@ $electrical = array(
 	"electrical"
 );
 
-/**********************/
-/* coupon.class file */
-/********************/
 
+/* Coupon */
 class Coupon{
 	public static function name($title,$coupon_name){
 		$coupon_container = "";
@@ -90,10 +84,8 @@ class Coupon{
 	}
 }
 
-/******************/
-/*** phone.class **/
-/******************/
 
+/* Phone */
 class Phone{
 
 	/* Use this function if there are multiple phone numbers */
@@ -115,13 +107,10 @@ class Phone{
 	}
 }
 
-/******************/
-/*** meta.class ***/
-/******************/
-
+/* Meta tags */
 class Meta{
 
-	public static function meta_keyword($title,$meta_keywords){
+	public static function keyword($title,$meta_keywords){
 		foreach($meta_keywords as $key => $value){
 			if($title == $key){
 				return $value;
@@ -129,7 +118,7 @@ class Meta{
 		}
 	}
 
-	public static function meta_description($title,$meta_descriptions){
+	public static function description($title,$meta_descriptions){
 		foreach($meta_descriptions as $key => $value){
 			if($title == $key){
 				return $value;
