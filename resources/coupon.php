@@ -5,7 +5,7 @@
 	* Get the coupon name from the query string.
 	*/
 	if(isset($_GET["coupon"])){
-		if(in_array($_GET["coupon"],$branding) || $_GET["coupon"] == ""){
+		if(in_array($_GET["coupon"],$coupon_name) || $_GET["coupon"] == ""){
 			$coupon = "default";
 		}else{
 			$coupon = $_GET["coupon"];

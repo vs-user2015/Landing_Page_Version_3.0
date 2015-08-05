@@ -46,29 +46,6 @@ $coupon_name = array(
 	"contact-us"
 );
 
-$specials = array(
-	"plumbing"
-);
-
-/* List of the pages */
-$branding = array(
-	"about-us",
-	"contact-us"
-);
-
-$plumbing = array(
-	"plumbing"
-);
-
-$hvac = array(
-	"cooling-repair"
-);
-
-$electrical = array(
-	"electrical"
-);
-
-
 /* Coupon */
 class Coupon{
 	public static function name($title,$coupon_name,$client_id){
