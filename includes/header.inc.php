@@ -99,7 +99,11 @@
 								</div>
 							</div>
 							<div id="coupon_container">
-								<img src="images/coupon.png">
+								<?php echo Coupon::name($title,$coupon_name,$client_id) ; ?>
+								<!--div id="specials">
+									<div id="print_coupon"></div>
+								</div-->
+								<!--img src="images/coupon.png"-->
 							</div>	
 							<div class="clear"></div>	
 						</div>	
@@ -114,7 +118,6 @@
 								<p>CONTACT US</p>
 								<div class="clear"></div>
 							</div>
-
 							<div id="sliding_marque">
 							        <div>
 							         	<h4 id="h4_service">SCHEDULE SERVICE</h4>

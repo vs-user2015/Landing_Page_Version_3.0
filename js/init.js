@@ -64,6 +64,39 @@ jQuery(document).ready(function($){
 		});
 	}
 	
+	// PRINT COUPON //
+	var $print_coupon = $("#print_coupon");
+	function titleOfPage(){
+		// get pathname of current file
+		var pathString = window.location.pathname;
+		
+		// Split the path name into array elements
+		var pageName = pathString.split("/");
+		
+		// Select the last array element
+		pageName = pageName[pageName.length - 1];
+		
+		// Select the last array element
+		pageName = pageName.substring(0,pageName.length - 4);
+		
+		// Render the pageName
+		return pageName;
+	}
+	
+	$print_coupon.click(function(){
+		window.open("resources/coupon.php?coupon=" + titleOfPage(),"specials","width=" + screen.width + "height=" + screen.height + ",fullscreen=yes");
+	});
+	
+	var $close_coupon_button = $(".close");
+	var $print_coupon_button = $(".print");
+	$close_coupon_button.click(function(){
+		window.close();
+	});
+	
+	$print_coupon_button.click(function(){
+		window.print();
+	});
+	
 	// MOVE #three_box ELEMENT TO FOOTER //
 	if($(window).width() <= 767){
 		var $three_box = $("#three_box");

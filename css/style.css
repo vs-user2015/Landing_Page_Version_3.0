@@ -138,6 +138,22 @@ body{
 	float: left;
 }
 
+#specials {
+	display: block; 
+	height: 180px;
+	position: relative;
+	width: 365px;
+}
+
+#print_coupon {
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	left: 32%;
+	position: absolute;
+	width: 125px;
+}
+
 /***********************************************/
 /**************** SCHEDULE ********************/
 /**********************************************/
@@ -777,6 +793,7 @@ body{
     background: #28245f;
     height: 50px;
     position: fixed;
+	z-index: 10;
 }
 
 #company_info img {
@@ -829,12 +846,6 @@ body{
     float: none;
 }
 
-#coupon_container img{
-	margin: 0 auto;
-	width: 290px;
-	display: block;
-}
-
 .slider {
     background: #3c368f;
     height: 190px;
@@ -842,6 +853,12 @@ body{
     padding-top: 50px;
 }
 
+
+#specials {
+	display: block;
+	margin: 0 auto;
+	width: 290px;
+}
 
 #learn_more {
     text-align: center;

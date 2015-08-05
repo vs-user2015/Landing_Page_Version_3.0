@@ -9,6 +9,8 @@ $copy = "Copyright &copy; " . date("Y") . " " . $company_name;
 
 $company_logo = "logo";
 
+$client_id = "LP_coupon";
+
 /* $title is used anywhere to return the name of the page */
 $title = substr(basename($_SERVER["PHP_SELF"]),0,-4);
 
@@ -40,7 +42,8 @@ $meta_descriptions = array(
 
 /* This is for coupon names */
 $coupon_name = array(
-	"about-us"
+	"about-us",
+	"contact-us"
 );
 
 $specials = array(
@@ -49,7 +52,8 @@ $specials = array(
 
 /* List of the pages */
 $branding = array(
-	"about-us"
+	"about-us",
+	"contact-us"
 );
 
 $plumbing = array(
@@ -67,16 +71,16 @@ $electrical = array(
 
 /* Coupon */
 class Coupon{
-	public static function name($title,$coupon_name){
+	public static function name($title,$coupon_name,$client_id){
 		$coupon_container = "";
 		
 		if(in_array($title,$coupon_name)){
-			$coupon_container .= "<div class='coupon_" . $title . "' style='background:url(\"http://elements.vitalstorm.com/elements/PS/" . $title . ".png\") no-repeat scroll rgba(0, 0, 0, 0); background-size: 100%;'>";
-			$coupon_container .= "<p><img alt='" . $title . "' class='print-button' src='images/print-button.png' title='" . $title . "'>Call this <b>" . date("l"). "</b> for</p>";
+			$coupon_container .= "<div id='specials' style='background:url(\"http://elements.vitalstorm.com/elements/" . $client_id . "/" . $title . ".png\") no-repeat scroll rgba(0, 0, 0, 0); background-size: 100%;'>";
+			$coupon_container .= "<div id='print_coupon'></div>";
 			$coupon_container .= "</div>";
 		}else{
-			$coupon_container .= "<div class='coupon_default' style='background:url(\"http://elements.vitalstorm.com/elements/PS/default.png\")no-repeat scroll rgba(0, 0, 0, 0); background-size: 100%;'>";
-			$coupon_container .= "<p><img alt='print coupon' class='print-button' src='images/print-button.png' title='print coupon'>Call this <b>" . date("l"). "</b> for</p>";
+			$coupon_container .= "<div id='specials' style='background:url(\"http://elements.vitalstorm.com/elements/" . $client_id . "/default" . ".png\") no-repeat scroll rgba(0, 0, 0, 0); background-size: 100%;'>";
+			$coupon_container .= "<div id='print_coupon'></div>";
 			$coupon_container .= "</div>";
 		}
 		
