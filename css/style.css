@@ -147,11 +147,23 @@ body{
 	padding: 15px 0;
 }
 
+#sliding_marque {
+	height: 38px;
+	overflow: hidden;
+}
+
 #h4_service {
 	color: #ffffff;
+	display: inline-block;
 	font-weight: 700;
 	font-size: 28px;
-	padding: 5px;
+}
+
+#slide_in_number {
+	color: #fff;
+	display: inline-block;
+	font-size: 180%;
+	font-weight: 800
 }
 
 #contact_us_mobile{
@@ -836,6 +848,10 @@ body{
     width: 100%;
     background-color: #f0b738;
     padding: 0px 0;
+}
+
+#sliding_marque {
+ display: none
 }
 
 #h4_service{
