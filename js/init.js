@@ -4,12 +4,12 @@ jQuery(document).ready(function($){
 	var $asset_container = $("#h4_service").parent();
 	var h4_serviceWidth = $("#h4_service").width();
 	var slide_in_numberWidth = $("#slide_in_number").width();
-	var frame_view = $("#h4_service").width();
+	var frame_view = h4_serviceWidth + "px"; 
 	
 	/* Set the #sliding_marque to be the width of the #h4_service and 
 	set and this will be the view port of the #sliding_marque */
 	$sliding_marque.css({ 
-		width : frame_view + "px",
+		width : frame_view,
 		overflow : "hidden"
 	});
 	
