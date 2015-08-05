@@ -6,6 +6,13 @@ jQuery(document).ready(function($){
 	var slide_in_numberWidth = $("#slide_in_number").width();
 	var frame_view = $("#h4_service").width();
 	
+	/* Set the #sliding_marque to be the width of the #h4_service and 
+	set and this will be the view port of the #sliding_marque */
+	$sliding_marque.css({ 
+		width : frame_view + "px",
+		overflow : "hidden"
+	});
+	
 	/* Set the position of the sliding of the sliding element #sliding_marque.
 	When #schedule element is fixed to top of the screen the #h4_service element
 	will slide to the left and the phone number will slide into the frame_view 
@@ -15,13 +22,6 @@ jQuery(document).ready(function($){
 		position : "relative",
 		width : h4_serviceWidth + slide_in_numberWidth + 10 + "px",
 		transition : "left 0.3s ease-in-out"
-	});
-	
-	/* Set the #sliding_marque to be the width of the #h4_service and 
-	set and this will be the view port of the #sliding_marque */
-	$sliding_marque.css({ 
-		width : frame_view + "px",
-		overflow : "hidden"
 	});
 	
 	if($(window).width() >= 768){
