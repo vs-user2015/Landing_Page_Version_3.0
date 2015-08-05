@@ -148,11 +148,15 @@ body{
 	height: 130px;
 }
 
+#sliding_marque {
+	height: 38px;
+	overflow: hidden;
+}
+
 #h4_service {
 	color: #ffffff;
 	font-weight: 700;
 	font-size: 28px;
-	padding: 5px;
 }
 
 #contact_us_mobile{
@@ -855,6 +859,10 @@ body{
     width: 100%;
     background-color: #f0b738;
     padding: 0px 0;
+}
+
+#sliding_marque {
+ display: none
 }
 
 #h4_service{
