@@ -115,7 +115,12 @@
 								<div class="clear"></div>
 							</div>
 
-							<h4 id="h4_service">SCHEDULE SERVICE</h4>
+							<div id="sliding_marque">
+							        <div>
+							         	<h4 id="h4_service">SCHEDULE SERVICE</h4>
+							         	<p id="slide_in_number">111-222-3333</p>
+							        </div>
+							</div>
 							<div id="include_desktop_contact_form" class="form">
 								<!-- Form -->
 								<?php include "includes/contact_form.inc.php" ; ?>	      	
