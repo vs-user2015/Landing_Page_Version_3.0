@@ -182,6 +182,11 @@ body{
 	display: none;
 }
 
+#sliding_marque {
+	overflow: hidden;
+	width: 225px
+}
+
 /****************** FORM ************************/
 
 #include_desktop_contact_form input{
@@ -886,7 +891,7 @@ body{
 }
 
 #sliding_marque {
- display: none
+	display: none
 }
 
 #h4_service{
