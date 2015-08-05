@@ -157,6 +157,7 @@ body{
 	display: inline-block;
 	font-size: 28px;
 	font-weight: 700;
+	width: auto
 }
 
 #slide_in_number {
