@@ -1,6 +1,6 @@
 <aside class="side-bar-image-top">
 	<div>
-		<h1>Electrical Services</h1>
+		<h1>ELECTRICAL SERVICES</h1>
 		<nav id="primary_navigation">
 			<ul>
 				<li><a href="index.php">Electrical repair</a></li>
@@ -16,11 +16,11 @@
 		<div class="side-bar-image-bottom">
 			<nav id="secondary_navigation">
 				<ul>
-					<li><a href="index.php">About Us</a></li>
-					<li><a href="index.php">Testimonials</a></li>
-					<li><a href="index.php">Current Offers</a></li>
-					<li><a href="index.php">Other Services</a></li>
-					<li><a href="index.php">Coupons</a></li>
+					<li><a href="index.php">ABOUT US</a></li>
+					<li><a href="index.php">TESTIMONIALS</a></li>
+					<li><a href="index.php">CURRENT OFFERS</a></li>
+					<li><a href="index.php">OTHER SERVICES</a></li>
+					<li><a href="index.php">COUPONS</a></li>
 				</ul>
 			</nav>
 		</div>
