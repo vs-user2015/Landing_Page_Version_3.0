@@ -10,7 +10,8 @@
 		<meta name="description" content="<?php echo Meta::description($title,$meta_descriptions) ; ?>">
 		<meta name="author" content="VitalStorm.com">
 		<link href="css/style.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300" rel="stylesheet" type="text/css">
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 		<script src="js/init.js" type="text/javascript"></script>
 	</head>
@@ -95,7 +96,6 @@
 							<div id="learn_more">
 								<div class="learn-more-about-us">
 									<h1>Learn More About Us</h1>
-									<p>Lorem ipsum dolor sit smet, consectetur adispicing elit. Nullan eu frigina maximush, Duis egot sodalese eros. Suspendiet Dicturm, faucibnus mauris in, frightlas quan</p>
 								</div>
 							</div>
 							<div id="coupon_container">
@@ -114,13 +114,8 @@
 								<p>CONTACT US</p>
 								<div class="clear"></div>
 							</div>
-							
-							<div id="sliding_marque">
-								<div>
-									<h4 id="h4_service">SCHEDULE SERVICE</h4>
-									<p id="slide_in_number">111-222-3333</p>
-								</div>
-							</div>
+
+							<h4 id="h4_service">SCHEDULE SERVICE</h4>
 							<div id="include_desktop_contact_form" class="form">
 								<!-- Form -->
 								<?php include "includes/contact_form.inc.php" ; ?>	      	
