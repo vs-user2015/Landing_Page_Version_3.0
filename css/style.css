@@ -145,7 +145,6 @@ body{
 #schedule{
 	width: 100%;
 	background-color: #f0b738;
-	height: 130px;
 }
 
 #sliding_marque {
@@ -789,6 +788,10 @@ body{
     position: relative;
     height: 50px;
     right: 10px
+}
+
+#number {
+  padding-top: 0;
 }
 
 #top_number span{
