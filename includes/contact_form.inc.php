@@ -1,4 +1,3 @@
-
 <form action="" method="post">
 	<input type="text" name="firstname" value="" class="firstname" placeholder="First Name*">
 	<input type="text" name="phonenumber" value="" class="phonenumber" placeholder="Phone Number*">
