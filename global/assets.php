@@ -43,8 +43,24 @@ $meta_descriptions = array(
 /* This is for coupon names */
 $coupon_name = array(
 	"about-us",
-	"contact-us"
+	"contact-us",
+	"testimonials"
 );
+
+/* This is the array for the h1 next to the coupon */
+$headliner = array(
+	"about-us" => "Learn more about us",
+	"contact-us" => "Contact us",
+	"testimonials" => "Testimonials"
+);
+
+function headliner_text($title,$headliner){
+	if(array_key_exists($title,$headliner)){
+		return $headliner[$title];
+	}else{
+		return "Learn More About Us";
+	}
+}
 
 /* Coupon */
 class Coupon{
@@ -54,10 +70,12 @@ class Coupon{
 		if(in_array($title,$coupon_name)){
 			$coupon_container .= "<div id='specials' style='background:url(\"http://elements.vitalstorm.com/elements/" . $client_id . "/" . $title . ".png\") no-repeat scroll rgba(0, 0, 0, 0); background-size: 100%;'>";
 			$coupon_container .= "<div id='print_coupon'></div>";
+			$coupon_container .= "<p id='day_of_week'>Call this <b>" . date("l") . "</b> for </div>";
 			$coupon_container .= "</div>";
 		}else{
 			$coupon_container .= "<div id='specials' style='background:url(\"http://elements.vitalstorm.com/elements/" . $client_id . "/default" . ".png\") no-repeat scroll rgba(0, 0, 0, 0); background-size: 100%;'>";
 			$coupon_container .= "<div id='print_coupon'></div>";
+			$coupon_container .= "<p id='day_of_week'>Call this <b>" . date("l") . "</b> for </div>";
 			$coupon_container .= "</div>";
 		}
 		

@@ -154,6 +154,15 @@ body{
 	width: 125px;
 }
 
+#day_of_week {
+	display: block;
+	font-size: 200%;
+	position: absolute;
+	text-align: center;
+	top: 33px;
+	width: 100%;
+}
+
 /***********************************************/
 /**************** SCHEDULE ********************/
 /**********************************************/
@@ -1074,6 +1083,10 @@ body{
 	display: block;
 }
 
+#day_of_week {
+  font-size: 150%;
+  top: 27px;
+}
 	
 }
 

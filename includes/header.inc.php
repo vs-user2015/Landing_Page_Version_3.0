@@ -27,7 +27,7 @@
 			<nav id="mobile_menu">
 				<ul>
 					<li>
-						<a href="index.php">About Us</a>
+						<a href="about-us.php">About Us</a>
 						<img src="images/sub_menu_button.png" class="sub-menu-mobile">
 						<ul class="sub-menu">
 							<li><a href="contact-us.php">Page 1</a></li>
@@ -45,14 +45,14 @@
 						</ul>
 					</li>
 					<li>
-						<a href="index.php">Testimonials</a>
+						<a href="testimonials.php">Testimonials</a>
 						<img src="images/sub_menu_button.png" class="sub-menu-mobile">
 						<ul class="sub-menu">
 							<li><a href="">Page 1</a></li>
 							<li><a href="">Page 2</a></li>
 						</ul>
 					</li>
-					<li>Contact Us</li>
+					<li><a href="contact-us.php" title="contact us">Contact Us</a></li>
 				</ul>
 			</nav>	
 		</section>
@@ -82,7 +82,7 @@
 								<div  rel="trigger_mobile_nav">
 									<img src="images/mobile-nav.png" id="mobile_nav" rel="trigger_mobile_nav">
 								</div>
-								<p id="top_number"><span>CALL</span> <?php echo Phone::number_single($phone_number) ;?></p>
+								<p id="top_number"><span>CALL</span> <span id="number_rewrite"><?php echo Phone::number_single($phone_number) ;?></span></p>
 								<p id="sub_title">Local and Trusted Roofing Experts</p>
 							</div>
 							<div class="clear"></div>
@@ -95,15 +95,11 @@
 						<div class="inner-padding">
 							<div id="learn_more">
 								<div class="learn-more-about-us">
-									<h1>Learn More About Us</h1>
+									<h1><?php echo headliner_text($title,$headliner) ; ?></h1>
 								</div>
 							</div>
 							<div id="coupon_container">
 								<?php echo Coupon::name($title,$coupon_name,$client_id) ; ?>
-								<!--div id="specials">
-									<div id="print_coupon"></div>
-								</div-->
-								<!--img src="images/coupon.png"-->
 							</div>	
 							<div class="clear"></div>	
 						</div>	
@@ -121,7 +117,7 @@
 							<div id="sliding_marque">
 							        <div>
 							         	<h4 id="h4_service">SCHEDULE SERVICE</h4>
-							         	<p id="slide_in_number">111-222-3333</p>
+							         	<p id="slide_in_number"><?php echo Phone::number_single($phone_number) ;?></span></p>
 							        </div>
 							</div>
 							<div id="include_desktop_contact_form" class="form">

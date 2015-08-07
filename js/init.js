@@ -1,4 +1,9 @@
 jQuery(document).ready(function($){
+	// GET PHONE NUMBER AND INSERT IT INTO FORM //
+	var $number_rewrite = $("#number_rewrite").html();
+	var $vsref = $("input[name='vsref']");
+	setTimeout(function(){$vsref.val($number_rewrite);},1000);
+	
 	// MAKE CONTACT FORM STICK TO TOP //
 	var $sliding_marque = $("#sliding_marque");
 	var $asset_container = $("#h4_service").parent();

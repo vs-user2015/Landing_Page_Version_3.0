@@ -22,13 +22,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
+			body {
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+		
 			.logo {
 				display: block;
 				width: 100%
 			}
 			
 			.button {
-				width: 100%
+				width: 365px
 			}
 		
 			#coupon_deal {
@@ -41,6 +45,15 @@
 				display: block;
 				height: 180px;
 				width: 365px
+			}
+			
+			#day_of_week {
+				font-size: 180%;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				top: 142px;
+				width: 100%;
 			}
 			
 			.close,
@@ -67,6 +80,21 @@
 			
 			@media (max-width: 767px){
 				
+			.button {
+				width: 100%
+			}
+				
+			.logo {
+				height: auto;
+				margin: 0 auto;
+				width: 290px
+			}
+			
+			#day_of_week {
+				font-size: 140%;
+				top: 114px;
+			}
+			
 			#coupon_deal {
 				width: 100%
 			}
@@ -74,6 +102,16 @@
 				height: auto;
 				margin: auto;
 				width: 290px
+			}
+			
+			.close,
+			.print {
+				font-size: 200%;
+			}
+			
+			#close_print {
+				margin: 0 auto;
+				width: 300px
 			}
 			
 			}
@@ -85,9 +123,12 @@
 		<section id="coupon_deal">
 			<div class="button">
 				<img alt="<?php echo $company_name ; ?> specials" class="logo" src="../images/logo.png">
+				<p id='day_of_week'>Call this <b><?php echo date("l") ; ?></b> for </p>
 				<img alt="sylvester coupon" class="coupon-image" src="http://elements.vitalstorm.com/elements/<?php echo $client_id ; ?>/<?php echo $coupon ; ?>.png">
-				<p class="close">Close</p>
-				<p class="print">Print</p>
+				<div id="close_print">
+					<p class="close">Close</p>
+					<p class="print">Print</p>
+				</div>
 			</div>
 		</section>
 	</body>
