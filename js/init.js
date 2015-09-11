@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	// GET PHONE NUMBER AND INSERT IT INTO FORM //
 	setTimeout(function(){
 		// Get text node from element
 		var number_rewrite = $("#number_rewrite").html();
@@ -14,11 +15,10 @@ jQuery(document).ready(function($){
 		var $vsref = $("input[name='vsref']");
 		
 		// Insert uid into $vsref value attribute
-		$vsref.val(uid);
 		var $number_rewrite = $("#number_rewrite").html();
 		var $vsref = $("input[name='vsref']");
-		$vsref.val($number_rewrite);
-	},1000);
+		$vsref.val(uid);
+	},1000);;
 	
 	// MAKE CONTACT FORM STICK TO TOP //
 	var $sliding_marque = $("#sliding_marque");
