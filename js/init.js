@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 	var interval = setInterval(function(){
 		if(typeof _vsrkpd == 'object' && typeof _vsrkpd.d != 'undefined'){
 			if(_vsrkpd.d == null){
-				$vsref.val('');
+				$vsref.val($('#number_rewrite').text().replace(/[^0-9]/g,''));
 			}else{
 				$vsref.val(_vsrkpd.d[0].num);
 			}
