@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	var timesChecked = 0;
 	var $vsref = $("input[name='Field5']");
 	var interval = setInterval(function(){
-		if(_vsrkpd && typeof _vsrkpd.d != 'undefined'){
+		if(typeof _vsrkpd == 'object' && typeof _vsrkpd.d != 'undefined'){
 			if(_vsrkpd.d == null){
 				$vsref.val('');
 			}else{
