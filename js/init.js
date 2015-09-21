@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 	// GET PHONE NUMBER AND INSERT IT INTO FORM //
 	var interval = setInterval(function(){
 		if(_vsrkpd && typeof _vsrkpd.d != 'undefined'){
-			var $vsref = $("input[name='vsref']");
+			var $vsref = $("input[name='Field5']");
 			if(_vsrkpd.d == null){
 				$vsref.val('');
 			}else{
