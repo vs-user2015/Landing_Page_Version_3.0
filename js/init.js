@@ -1,24 +1,16 @@
 jQuery(document).ready(function($){
 	// GET PHONE NUMBER AND INSERT IT INTO FORM //
-	setTimeout(function(){
-		// Get text node from element
-		var number_rewrite = $("#number_rewrite").html();
-		
-		// Split the number from number_rewrite into arrays 
-		// delimiter is "-"
-		number_rewrite = number_rewrite.split("-");
-		
-		// Turn the number_rewrite arrays into string
-		var uid = number_rewrite.join("");
-		
-		// Get target element to insert number_rewrite into
-		var $vsref = $("input[name='vsref']");
-		
-		// Insert uid into $vsref value attribute
-		var $number_rewrite = $("#number_rewrite").html();
-		var $vsref = $("input[name='vsref']");
-		$vsref.val(uid);
-	},1000);;
+	var interval = setInterval(function(){
+		if(_vsrkpd && typeof _vsrkpd.d != 'undefined'){
+			var $vsref = $("input[name='vsref']");
+			if(_vsrkpd.d == null){
+				$vsref.val('');
+			}else{
+				$vsref.val(_vsrkpd.d[0].num);
+			}
+			clearInterval(interval);
+		}
+	},100);
 	
 	// MAKE CONTACT FORM STICK TO TOP //
 	var $sliding_marque = $("#sliding_marque");
